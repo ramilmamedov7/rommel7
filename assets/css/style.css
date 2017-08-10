@@ -178,9 +178,9 @@ body {
 
 .sidebar .heading #name {
     color: white;
-/*    position: absolute;*/
-/*    top: 17px;*/
-/*    width: 250px;*/
+    /*    position: absolute;*/
+    /*    top: 17px;*/
+    /*    width: 250px;*/
 }
 
 .sidebar .heading .feature-img {
@@ -269,6 +269,10 @@ body {
     margin: 0px;
 }
 
+.sidebar .section-item-details h4 {
+    margin: 0px;
+}
+
 .sidebar .info {
     border-bottom: 1px solid #4783c2;
     padding-left: 0px;
@@ -287,6 +291,10 @@ body {
     margin: 0px;
     float: left;
     margin-right: 5%;
+}
+
+.sidebar .work h4 {
+    margin: 0px;
 }
 
 .sidebar .home h4 {
@@ -376,9 +384,22 @@ body {
 }
 
 #Git {
-    position: absolute;
-    left: 47%;
-    top: 40%;
+    /*    position: absolute;*/
+    /*    left: 47%;*/
+    /*    top: 40%;*/
+    display: flex;
+    justify-content: center;
+    height: 20px;
+}
+
+#Git a {
+    cursor: pointer;
+    color: #767270;
+    height: 25px;
+}
+
+#Git a:hover {
+    border-bottom: 1px solid #bdbdbd;
 }
 
 
@@ -454,7 +475,7 @@ body {
 */
 
 .website {
-    padding-top: 40px !important;
+    padding-top: 20px !important;
     padding: 20px;
 }
 
@@ -464,8 +485,7 @@ body {
 }
 
 .website span a {
-    color: #5da4d9;
-    word-wrap: break-word;
+    text-align: center;
 }
 
 
@@ -645,7 +665,6 @@ body {
     height: 350px;
 }
 
-
 .map-container {
     width: 100%
 }
@@ -660,8 +679,6 @@ body {
 .map-container iframe.clicked {
     pointer-events: auto
 }
-
-
 
 input[type=text]:focus:not([readonly]),
 input[type=password]:focus:not([readonly]),
@@ -832,6 +849,16 @@ textarea.materialize-textarea:focus:not([readonly])+label {
 
 .full-project {
     padding: 30px !important;
+}
+
+#portfolio-item {
+    margin-left: -2%;
+}
+
+#portfolio-item figure img {
+    width: 364px !important;
+    height: 307px !important;
+    box-shadow: 3px 3px 5px 6px #ccc;
 }
 
 .single-project {
