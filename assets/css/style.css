@@ -852,13 +852,23 @@ textarea.materialize-textarea:focus:not([readonly])+label {
 }
 
 #portfolio-item {
-    margin-left: -2%;
+    margin-left: 2%;
+}
+
+#portfolio-item figure img:hover {
+    transform: scale(1.05, 1.05);
+    overflow: hidden;
+    transition: 1s ease-out;
 }
 
 #portfolio-item figure img {
     width: 364px !important;
     height: 307px !important;
     box-shadow: 3px 3px 5px 6px #ccc;
+}
+
+#portfolio-item figure figcaption {
+    cursor: help;
 }
 
 .single-project {
@@ -906,4 +916,11 @@ textarea.materialize-textarea:focus:not([readonly])+label {
 
 .project-information li a {
     color: #5da4d9;
+}
+
+figure {
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    -webkit-margin-start: 0;
+    -webkit-margin-end: 0;
 }
