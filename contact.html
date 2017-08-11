@@ -57,7 +57,7 @@
                             <img src="assets/images/profile-img.jpg" class="responsive-img" alt="">
                             <div class="titleAd">
                                 <h2 id="name">Ramil Mamedov</h2>
-                                <span>Programmer & Engineer </span>
+                                <h5 id="proffesion">Programmer & Engineer </h5>
                             </div>
                         </div>
                         <!-- =========================================
@@ -232,21 +232,32 @@
                             <h2>Contact</h2>
                             <div class="contact-form" id="contact">
                                 <div class="row">
-                                    <form role="form" id="contactForm" data-toggle="validator">
+                                    <!--
+
+                                    <form role="form" id="contactForm" data-toggle="validator" action="https://formspree.io/ramil.mamedov7991@gmail.com" method="POST">
                                         <div id="msgSubmit" class="h3 text-center hidden"></div>
                                         <div class="input-field col s12">
                                             <label for="name" class="h4">Name *</label>
-                                            <input type="text" class="form-control validate" id="name" required data-error="NEW ERROR MESSAGE"> </div>
+                                            <input type="text" class="form-control validate" id="name" required data-error="NEW ERROR MESSAGE" name="name"> </div>
                                         <div class="input-field col s12">
                                             <label for="email" class="h4">Email *</label>
-                                            <input type="email" class="form-control validate" id="email" required> </div>
+                                            <input type="email" class="form-control validate" id="email" required name="_replyto"> </div>
                                         <div class="input-field col s12">
                                             <label for="message" class="h4 ">Message *</label>
                                             <textarea id="message" class="form-control materialize-textarea validate" required></textarea>
                                         </div>
-                                        <button type="submit" id="form-submit" class="btn btn-success">Submit</button>
+
+                                        <button type="submit" id="form-sbmit" class="btn btn-success">Submit</button>
                                         <div class="clearfix"></div>
                                     </form>
+-->
+                                    <form action="https://formspree.io/ramil.mamedov7991@gmail.com" method="POST">
+                                        <input type="text" name="name">
+                                        <input type="email" name="_replyto">
+                                        <input type="submit" value="Send">
+                                    </form>
+
+
                                 </div>
                             </div>
                         </div>
@@ -255,7 +266,7 @@
                           portfolio Website
                         ==========================================-->
                     <div class="section-wrapper z-depth-1 wow fadeIn" data-wow-delay="0.1s">
-                        <div class="col s12 m12 l12 website right">
+                        <div class="col s12 m12 l12 website right" id="gitRow">
                             <div class="row" style="margin-bottom: 0;">
                                 <span id="Git"><a href="https://github.com/Rommel7">GitHub</a></span>
                             </div>
