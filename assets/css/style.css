@@ -178,9 +178,13 @@ body {
 
 .sidebar .heading #name {
     color: white;
-    /*    position: absolute;*/
-    /*    top: 17px;*/
-    /*    width: 250px;*/
+    background-color: rgba(0, 0, 0, 0.25);
+}
+
+.sidebar .heading #proffesion {
+    color: white;
+    font-size: 15px;
+    background-color: rgba(0, 0, 0, 0.25);
 }
 
 .sidebar .heading .feature-img {
@@ -419,7 +423,7 @@ body {
 
 .titleAd {
     position: absolute;
-    bottom: 2%;
+    bottom: 5px;
     width: 100%;
     text-align: center;
 }
