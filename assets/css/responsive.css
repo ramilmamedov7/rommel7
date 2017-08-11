@@ -1,3 +1,28 @@
+@media only screen and (max-device-width: 1400px) {
+    .sidebar .heading #name {
+        color: white;
+        bottom: 0%;
+        background-color: rgba(0, 0, 0, 0.25);
+    }
+    .sidebar .heading .title span {
+        margin-top: -5px;
+        font-size: 10pt;
+        margin: 0px;
+        padding: 0px;
+        line-height: 15pt;
+        position: absolute;
+        bottom: -5px;
+    }
+    .sidebar .personal h4 {
+        margin: 0px;
+        float: left;
+        margin-right: 5%;
+        overflow: hidden;
+        width: 200px;
+    }
+}
+
+
 /* Smartphones (landscape) */
 
 @media only screen and (min-width: 321px) and (max-device-width: 568px) {
@@ -156,34 +181,14 @@
         margin-top: 20px;
         margin-bottom: 10px;
     }
+     .sidebar .heading #name {
+        color: white;
+        bottom: 0%;
+        background-color: rgba(0, 0, 0, 0.25);
+    }
 }
 
-@media only screen and (min-device-width: 993px) and (max-device-width: 1400px) {
-    .sidebar .heading #name {
-        color: white;
-        position: absolute;
-        /* top: 17px; */
-        width: 250px;
-        bottom: 0%;
-        left: -10%;
-    }
-    .sidebar .heading .title span {
-        margin-top: -5px;
-        font-size: 10pt;
-        margin: 0px;
-        padding: 0px;
-        line-height: 15pt;
-        position: absolute;
-        bottom: -5px;
-    }
-    .sidebar .personal h4 {
-        margin: 0px;
-        float: left;
-        margin-right: 5%;
-        overflow: hidden;
-        width: 200px;
-    }
-}
+
 
 
 /* tab portrait and down   */
@@ -328,6 +333,13 @@
     .map-container {
         width: 95%;
         margin: auto;
+    }
+    .titleAd {
+        bottom: 5px;
+    }
+    
+    #gitRow {
+        height: 80px;
     }
 }
 

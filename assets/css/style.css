@@ -413,7 +413,7 @@ body {
     content: '\f09b';
     font-family: FontAwesome;
     font-size: 25px;
-    margin-right: 10%;
+    padding-right: 10px;
 }
 
 #Git a:hover {
@@ -893,8 +893,14 @@ textarea.materialize-textarea:focus:not([readonly])+label {
     box-shadow: 3px 3px 5px 6px #ccc;
 }
 
-#portfolio-item figure figcaption {
+#portfolio-item figure figcaption p {
     cursor: help;
+    font-size: 14px;
+}
+
+#portfolio-item figure figcaption:hover p{
+    margin-left: 7%;
+    transition: 0.5s ease-out;
 }
 
 .single-project {
