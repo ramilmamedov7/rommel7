@@ -344,6 +344,12 @@ body {
     opacity: initial;
 }
 
+.grades {
+    color: #5da4d9;
+    text-decoration: underline;
+    cursor: help;
+}
+
 
 /* style for
 
@@ -384,9 +390,6 @@ body {
 }
 
 #Git {
-    /*    position: absolute;*/
-    /*    left: 47%;*/
-    /*    top: 40%;*/
     display: flex;
     justify-content: center;
     height: 20px;
@@ -395,11 +398,30 @@ body {
 #Git a {
     cursor: pointer;
     color: #767270;
-    height: 25px;
+    line-height: 25px;
+    height: 30px;
+    transition: 0.3s ease;
+    border-bottom: 1px solid #fff;
+    font-size: 20px;
+}
+
+#Git a::before {
+    content: '\f09b';
+    font-family: FontAwesome;
+    font-size: 25px;
+    margin-right: 10%;
 }
 
 #Git a:hover {
     border-bottom: 1px solid #bdbdbd;
+    transition: 0.3s ease;
+}
+
+.titleAd {
+    position: absolute;
+    bottom: 2%;
+    width: 100%;
+    text-align: center;
 }
 
 
@@ -733,19 +755,19 @@ textarea.materialize-textarea:focus:not([readonly])+label {
 .btn.disabled {
     background-color: #5da4d9;
     color: #fff;
-    cursor: default;
+    cursor: pointer;
 }
 
 .btn.disabled:focus {
     background-color: #5da4d9;
     color: #fff;
-    cursor: default;
+    cursor: pointer;
 }
 
 .btn.disabled:hover {
     background-color: #5da4d9;
     color: #fff;
-    cursor: default;
+    cursor: pointer;
 }
 
 #msgSubmit {
