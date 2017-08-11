@@ -232,34 +232,30 @@
                             <h2>Contact</h2>
                             <div class="contact-form" id="contact">
                                 <div class="row">
-                                    <!--
-
-                                    <form role="form" id="contactForm" data-toggle="validator" action="https://formspree.io/ramil.mamedov7991@gmail.com" method="POST">
+                                    <form data-toggle="validator" action="https://formspree.io/ramil.mamedov7991@gmail.com" method="POST">
                                         <div id="msgSubmit" class="h3 text-center hidden"></div>
                                         <div class="input-field col s12">
                                             <label for="name" class="h4">Name *</label>
-                                            <input type="text" class="form-control validate" id="name" required data-error="NEW ERROR MESSAGE" name="name"> </div>
+                                            <input type="text" class="form-control validate" id="name" data-error="NEW ERROR MESSAGE" name="name"> </div>
                                         <div class="input-field col s12">
                                             <label for="email" class="h4">Email *</label>
-                                            <input type="email" class="form-control validate" id="email" required name="_replyto"> </div>
+                                            <input type="email" class="form-control validate" id="email" name="_replyto"> </div>
                                         <div class="input-field col s12">
                                             <label for="message" class="h4 ">Message *</label>
-                                            <textarea id="message" class="form-control materialize-textarea validate" required></textarea>
+                                            <textarea id="message" class="form-control materialize-textarea validate"></textarea>
                                         </div>
 
                                         <button type="submit" id="form-sbmit" class="btn btn-success">Submit</button>
                                         <div class="clearfix"></div>
                                     </form>
--->
-                                    <form action="https://formspree.io/ramil.mamedov7991@gmail.com" method="POST" role="form" id="contactForm" data-toggle="validator">
-                                        <div class="input-field col s12"><label for="name" class="h4">Name *</label>
-                                            <input type="text" name="name"></div>
-                                        <div class="input-field col s12"><label for="email" class="h4">Email *</label>
-                                            <input type="email" name="_replyto"></div>
-                                        <div class="input-field col s12"> <label for="message" class="h4">Message *</label>
-                                            <textarea name="message" id="message" class="form-control materialize-textarea validate"></textarea></div>
-                                        <button type="submit" id="form-sbmit" class="btn btn-success">Submit</button>
+                                    <!--
+                                    <form method="POST" action="http://formspree.io/ramil.mamedov7991@gmail.com">
+                                        <div class="col s12"></div>
+                                        <div class="col s12"> <input type="email" name="email" placeholder="Your email"></div>
+                                        <div class="col s12"> <textarea name="message" placeholder="Your message"></textarea></div>
+                                        <button type="submit">Send</button>
                                     </form>
+-->
                                 </div>
                             </div>
                         </div>
