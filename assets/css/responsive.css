@@ -18,7 +18,7 @@
         float: left;
         margin-right: 5%;
         overflow: hidden;
-        width: 200px;
+        /*        width: 200px;*/
     }
 }
 
@@ -181,14 +181,12 @@
         margin-top: 20px;
         margin-bottom: 10px;
     }
-     .sidebar .heading #name {
+    .sidebar .heading #name {
         color: white;
         bottom: 0%;
         background-color: rgba(0, 0, 0, 0.25);
     }
 }
-
-
 
 
 /* tab portrait and down   */
@@ -323,8 +321,9 @@
     }
     #Git {
         position: absolute;
-        left: 47%;
         top: 43%;
+        text-align: center;
+        width: 100%;
     }
     .single_image {
         color: #333;
@@ -337,7 +336,6 @@
     .titleAd {
         bottom: 5px;
     }
-    
     #gitRow {
         height: 80px;
     }
