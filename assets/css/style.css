@@ -1,46 +1,3 @@
-/*------------------------------------------------------------------
-
-[Master Stylesheet]
-Project:	    Matarial CV/Resume Template 
-Version:	    1.0
-Last change:	06/02/16 
-Primary use:	CV/Resume, Portfolio, Perosnal Website 
-
--------------------------------------------------------------------*/
-
-
-/*
-|----------------------------------------------------------------------------
-| CSS INDEX
-|----------------------------------------------------------------------------
-    1. STYLESHEET
-        1-1. CUSTOM 
-        1-2. TYPOGRAPHY
-        1.3. BODY
-    2. SIDEBAR
-    3. SECTIONS CUSTOM STYLE
-    4. WORK EXPERIENCE
-    5. INTEREST
-    6. WEBSITE
-    7. BLOG
-    8. COVER LATTER
-    9. CONTACT
-    10. PORTFOLIO
-
-------------------------------------------------------------------*/
-
-
-/*------------------------------------------------------------------
-[ Color codes ]
-    main-color:         #5da4d9;
-    Blue:               #71DD75 (Blue)    [ This is the main color in Template ]
-    white:              #FFFFFF (White)     [  ]
-    body-bg-color:      #eae8e7            [ body bg color ]
-    font-color:         #767270             [ font color  ]
-    border-color:       #4783c2;
-
------------------------------------------------------------------- */
-
 * {
     font-family: 'roboto', sans-serif;
 }
@@ -63,7 +20,6 @@ a {
 .clear {
     clear: both;
 }
-
 
 /* style for wow animation*/
 
@@ -103,7 +59,6 @@ a {
     -webkit-animation-name: fadeIn;
 }
 
-
 /* style for Typography */
 
 h2,
@@ -140,12 +95,7 @@ h5 {
     font-size: 22px;
 }
 
-
-/* style for
-
-***** body  *****
-
-*/
+/* Style for ***** body  ***** */
 
 body {
     background-color: #eae8e7;
@@ -157,12 +107,7 @@ body {
     margin-top: 24px;
 }
 
-
-/* style for
-
-***** Sidebar  *****
-
-*/
+/* Style for ***** Sidebar  ***** */
 
 .sidebar {
     text-align: left;
@@ -354,12 +299,7 @@ body {
     cursor: help;
 }
 
-
-/* style for
-
-***** Sections *****
-
-*/
+/* Style for ***** Sections ***** */
 
 #section {
     overflow: hidden;
@@ -405,7 +345,6 @@ body {
     height: 40px;
 }
 
-
 .Git a {
     cursor: pointer;
     color: #767270;
@@ -435,12 +374,7 @@ body {
     text-align: center;
 }
 
-
-/* style for
-
-***** Work Experience  *****
-
-*/
+/* Style for ***** Work Experience  ***** */
 
 .custom-content {
     padding-right: 0px !important;
@@ -478,12 +412,7 @@ body {
     margin-bottom: 25px;
 }
 
-
-/* style for
-
-*****  Interests  *****
-
-*/
+/* Style for *****  Interests  ***** */
 
 .interests ul {
     padding-left: 0px;
@@ -500,12 +429,7 @@ body {
     text-align: left;
 }
 
-
-/* style for
-
-***** Portfolio website  *****
-
-*/
+/*Style for ***** Portfolio website  ***** */
 
 .website {
     padding-top: 20px !important;
@@ -521,12 +445,7 @@ body {
     text-align: center;
 }
 
-
-/* style for
-
-***** blog  *****
-
-*/
+/* Style for ***** blog  ***** */
 
 .opacity {
     opacity: 0.7;
@@ -631,12 +550,7 @@ body {
     padding: 20px 50px !important;
 }
 
-
-/* style for
-    **************
-   * Cover latter * 
- 
-*/
+/* Style for    **************   * Cover latter * */
 
 .cover-latter {
     padding: 30px;
@@ -683,10 +597,7 @@ body {
     margin: 0px;
 }
 
-
-/* ***** Contact  *****
-*
-*/
+/* ***** Contact  ****** */
 
 .section .g-map {
     padding-bottom: 0px !important;
@@ -794,7 +705,6 @@ textarea.materialize-textarea:focus:not([readonly])+label {
 .text-success {
     color: #5da4d9;
 }
-
 
 /*
 |----------------------------------------------------------------------------
