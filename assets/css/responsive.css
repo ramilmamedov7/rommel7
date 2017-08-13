@@ -332,8 +332,12 @@
         bottom: 5px;
     }
     #gitRow {
-        height: 80px;
+        height: 65px;
     }
+    .section .section-wrapper {
+        padding-bottom: 0px;
+    }
+    
 }
 
 @media only screen and (max-width: 602px) {
