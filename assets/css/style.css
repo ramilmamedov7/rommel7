@@ -393,13 +393,20 @@ body {
     margin-bottom: 25px;
 }
 
-#Git {
+.Git {
     display: flex;
     justify-content: center;
     height: 20px;
 }
 
-#Git a {
+#GitId {
+    display: flex;
+    justify-content: center;
+    height: 40px;
+}
+
+
+.Git a {
     cursor: pointer;
     color: #767270;
     line-height: 25px;
@@ -409,14 +416,14 @@ body {
     font-size: 20px;
 }
 
-#Git a::before {
+.Git a::before {
     content: '\f09b';
     font-family: FontAwesome;
     font-size: 25px;
     padding-right: 10px;
 }
 
-#Git a:hover {
+.Git a:hover {
     border-bottom: 1px solid #bdbdbd;
     transition: 0.3s ease;
 }
