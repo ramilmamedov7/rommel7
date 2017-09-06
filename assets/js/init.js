@@ -119,3 +119,58 @@ $(document).ready(function() {
         }
         $("#msgSubmit").removeClass().addClass(msgClasses).text(msg);
     }
+    
+    	
+    /**************************************************************************
+       Projects
+    **************************************************************************/
+    $('#portfolio-item').mixItUp();
+    
+    $('.sa-view-project-detail').on('click', function(event) {
+        event.preventDefault();
+        var href          = $(this).attr('href') + ' ' + $(this).attr('data-action'),
+            dataShow      = $('#project-gallery-view'),
+            dataShowMeta  = $('#project-gallery-view meta'),
+            dataHide      = $('#portfolio-item'),
+            preLoader     = $('#loader'),
+            backBtn       = $('#back-button'),
+            filterBtn     = $('#filter-button');
+
+        dataHide.animate( { 'marginLeft':'-120%' }, { duration: 400, queue: false } );
+        filterBtn.animate( { 'marginLeft':'-120%' }, { duration: 400, queue: false } );
+        dataHide.fadeOut(400);
+        filterBtn.fadeOut(400);
+        setTimeout( function() { preLoader.show(); }, 400);
+        setTimeout( function() {
+            dataShow.load( href, function() {
+                dataShowMeta.remove();
+                preLoader.hide();
+                dataShow.fadeIn(600);
+                backBtn.fadeIn(600);
+            });
+        },800);
+    });
+
+    $('#back-button').on('click', function(event) {
+        event.preventDefault();
+        var dataShow    = $('#portfolio-item'),
+            dataHide    = $('#project-gallery-view'),
+            filterBtn   = $('#filter-button');
+
+        $("[data-animate]").each( function() {
+            $(this).addClass($(this).attr('data-animate'));
+        });
+
+        dataHide.fadeOut(400);
+        $(this).fadeOut(400);
+        setTimeout(function(){
+            dataShow.animate( { 'marginLeft': '0' }, { duration: 400, queue: false } );
+            filterBtn.animate( { 'marginLeft': '0' }, { duration: 400, queue: false } );
+            dataShow.fadeIn(400);
+            filterBtn.fadeIn(400);
+        },400);
+        setTimeout(function(){
+            dataShow.find('.fadeInRight, .fadeInLeft, .fadeInUp, .fadeInDown').removeClass('fadeInRight').removeClass('fadeInLeft').removeClass('fadeInUp').removeClass('fadeInDown');
+        },1500);
+    });
+});
