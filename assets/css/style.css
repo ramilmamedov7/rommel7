@@ -795,10 +795,7 @@ textarea.materialize-textarea:focus:not([readonly])+label {
 }
 
 #portfolio-item figure figcaption:hover p {
-    margin-left: 3.5%;
-    -webkit-transition: 0.7s ease-out;
-    -o-transition: 0.7s ease-out;
-    transition: 0.7s ease-out;
+    color: #000000;
 }
 
 .single-project {
