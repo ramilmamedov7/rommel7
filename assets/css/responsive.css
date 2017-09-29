@@ -13,13 +13,6 @@
         position: absolute;
         bottom: -5px;
     }
-    .sidebar .personal h4 {
-        margin: 0px;
-        float: left;
-        margin-right: 5%;
-        overflow: hidden;
-        /*        width: 200px;*/
-    }
 }
 
 /* Smartphones (landscape) */
@@ -113,7 +106,7 @@
     }
 }
 
-/* iPads (landscape) ----------- */
+/* iPads (landscape) */
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
     /* Sidebar Style*/
@@ -298,17 +291,6 @@
     .project-description {
         padding: 0 20px;
     }
-    .sidebar .personal h4 {
-        margin: 0px;
-        float: none;
-        margin-right: 0%;
-    }
-    .sidebar .home h4 {
-        margin-bottom: 0px;
-        float: none;
-        margin-right: 0%;
-        margin-top: 0%;
-    }
     .sidebar .heading .title {
         position: absolute;
         left: 0%;
@@ -337,7 +319,6 @@
     .section .section-wrapper {
         padding-bottom: 0px;
     }
-    
 }
 
 @media only screen and (max-width: 602px) {
