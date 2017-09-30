@@ -113,7 +113,7 @@ body {
 }
 
 .container {
-    padding-top: 24px;
+    margin-top: 24px;
 }
 
 /* Style for ***** Sidebar  ***** */
@@ -202,7 +202,7 @@ body {
 }
 
 .sidebar .icon {
-    margin: 8px 0px;
+    margin-bottom: 10px;
 }
 
 .sidebar .icon .fa {
