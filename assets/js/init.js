@@ -3,14 +3,40 @@ $(document).ready(function () {
 
     $('.button-collapse').sideNav();
 
+    // Profeesional skills
 
-    $(".determinate").each(function () {
-        var width = $(this).text();
-        $(this).css("width", width)
-            .empty()
-            .append('<i class="fa fa-circle"></i>');
+    var determinatePos, windowPos, cheked = false;
+
+    function refreshVar() {
+        determinatePos = $('.determinate').offset().top;
+        console.log(determinatePos)
+    }
+    refreshVar();
+    $(window).resize(refreshVar);
+    $(window).scroll(function () {
+        windowPos = $(window).scrollTop() + 300;
+        console.log(windowPos)
+        if (windowPos > determinatePos - 500 && !cheked) {
+            $('.determinate').each(function (index, value) {
+                var progressBar = $(this),
+                    width = 0,
+                    verilenWidth = $(value).text();
+                progressBar.empty();
+                progressBar.width(width);
+
+                var interval = setInterval(function () {
+                    width += 3.5;
+                    progressBar.css("width", width + "%");
+                    progressBar.append('<i class="fa fa-circle"></i>');
+
+                    if (width >= verilenWidth) {
+                        clearInterval(interval);
+                    }
+                }, 100)
+            });
+            cheked = true;
+        };
     });
-
 
     $('.cv-style-switch').click(function () {
         if ($(this).hasClass('open')) {
@@ -26,7 +52,6 @@ $(document).ready(function () {
         }
     });
 
-
     jQuery(window).on('load', function () {
         var $ = jQuery;
         $('.blog').masonry({
@@ -35,7 +60,6 @@ $(document).ready(function () {
             percentPosition: true
         });
     });
-
 
     var height = $('.caption').height();
     if ($(window).width()) {
@@ -110,7 +134,7 @@ $(document).ready(function () {
 
 
     /*** Projects ***/
-    
+
     //    $('#portfolio-item').mixItUp();
 
     $('.sa-view-project-detail').on('click', function (event) {
