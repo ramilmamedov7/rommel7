@@ -9,13 +9,13 @@ $(document).ready(function () {
 
     function refreshVar() {
         determinatePos = $('.determinate').offset().top;
-        console.log(determinatePos)
+        //console.log(determinatePos)
     }
     refreshVar();
     $(window).resize(refreshVar);
     $(window).scroll(function () {
         windowPos = $(window).scrollTop() + 300;
-        console.log(windowPos)
+        //console.log(windowPos)
         if (windowPos > determinatePos - 500 && !cheked) {
             $('.determinate').each(function (index, value) {
                 var progressBar = $(this),

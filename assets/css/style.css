@@ -32,7 +32,7 @@ img {
     overflow: hidden;
 }
 
-/* style for wow animation*/
+/* 1.style for wow animation*/
 
 .a1 {
     visibility: visible;
@@ -71,7 +71,7 @@ img {
 }
 
 
-/* style for Typography */
+/* 2.style for Typography */
 
 h2,
 h3 {
@@ -108,7 +108,7 @@ h5 {
 }
 
 
-/* style for body */
+/* 3.style for body */
 
 body {
     background-color: #eae8e7;
@@ -121,7 +121,7 @@ body {
 }
 
 
-/* Style for Name */
+/* 4.Style for Name */
 
 .titleAd {
     width: 100%;
@@ -141,7 +141,7 @@ body {
 }
 
 
-/* style for Sidebar */
+/* 5.style for Sidebar */
 
 .sidebar {
     text-align: left;
@@ -290,7 +290,7 @@ body {
 }
 
 
-/* style for Section */
+/* 6.style for Section */
 
 #section {
     overflow: hidden
@@ -325,7 +325,7 @@ body {
 }
 
 
-/* style for  Work Experience  */
+/* 7.style for  Work Experience  */
 
 .custom-content {
     padding-right: 0!important
@@ -394,11 +394,11 @@ body {
 }
 
 .git a:hover {
-    border-bottom: 1px solid #bdbdbd;
+    color: #5da4d9;
 }
 
 
-/* style for Interests */
+/* 8.style for Interests */
 
 .interests ul {
     padding-left: 0
@@ -416,7 +416,7 @@ body {
 }
 
 
-/* style fot Contact */
+/* 9.style fot Contact */
 
 .section .g-map {
     padding-bottom: 0!important;
@@ -516,7 +516,7 @@ textarea.materialize-textarea:focus:not([readonly])+label {
 }
 
 
-/* style for PORTFOLIO */
+/* 10.style for PORTFOLIO */
 
 .portfolio-nav ul {
     text-align: center
@@ -544,7 +544,7 @@ textarea.materialize-textarea:focus:not([readonly])+label {
 }
 
 
-/* Screenshots */
+/* 11.Screenshots */
 
 .screenshots .row {
     margin-bottom: 0px;
