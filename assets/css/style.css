@@ -32,6 +32,7 @@ img {
     overflow: hidden;
 }
 
+
 /* 1.style for wow animation*/
 
 .a1 {
@@ -413,6 +414,45 @@ body {
 .interests ul li .fa {
     color: #5da4d9;
     text-align: left
+}
+
+
+/* social media icon style */
+
+.social-media ul {
+    display: flex;
+    justify-content: space-around;
+    color: #5da4d9;
+}
+
+.social-media ul li .fa:hover {
+    cursor: pointer;
+}
+
+.social-media .fa-facebook:hover {
+    color: #3B5998;
+}
+
+.social-media .fa-linkedin:hover {
+    color: #007bb5;
+}
+
+.social-media .fa-tumblr:hover {
+    color: #2c4762;
+}
+
+.social-media .fa-instagram:hover {
+    background: linear-gradient(224.65793970864146deg, #8043af, #8442aa 2.9%, #8740a9 2.9%, #8842a8 4.2%, #8d3fa7 5.9%, #8d41a4 6.7%, #9d3d9c 16.4%, #9f3c9a 16.4%, #a63b96 20.2%, #a73a97 20.2%, #a83b96 23%, #aa3a92 23%, #ac3990 25.3%, #b63a8b 31.2%, #b93a88 35%, #bb3986 35%, #bc3986 37.4%, #be3884 37.4%, #c03a83 39.7%, #c13c83 40.3%, #c4397f 41.2%, #c63b7a 44.3%, #ca3d75 46.9%, #cb3c75 47.5%, #ca3e74 49.4%, #cc3d74 49.4%, #ce3e75 50.3%, #cf3d74 50.3%, #d84466 59.1%, #d94367 59.1%, #ef6744 90.4%, #f26a43 95.1%, #f26c42 95.1%, #f3703f 97.8%, #f46f40 97.8%, #f57041 99.7%, #f47141 99.7%, #f47141);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.social-media .fa-github:hover {
+    color: #333;
+}
+
+.social-media .fa-vk:hover {
+    color: #45668e;
 }
 
 
