@@ -146,8 +146,15 @@ body {
   display: block !important;
 }
 
+.side-nav li a {
+  -webkit-transition: 0.5s ease;
+  -o-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
 .sidebar .heading nav .side-nav li a:hover {
-  color: #616161;
+  color: #373737;
+  font-weight: 600;
 }
 
 .sidebar .heading .nav-icon {
@@ -375,7 +382,6 @@ body {
 
 .git a:hover {
   color: #373737;
-  
 }
 
 .interests ul {
