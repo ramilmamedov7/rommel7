@@ -128,7 +128,7 @@ body {
 .sidebar {
   text-align: left;
   color: #fff;
-  background-color: #5da4d9;
+  background-color: #616161;
   overflow: hidden;
   display: block;
 }
@@ -147,7 +147,7 @@ body {
 }
 
 .sidebar .heading nav .side-nav li a:hover {
-  color: #5da4d9;
+  color: #616161;
 }
 
 .sidebar .heading .nav-icon {
@@ -166,13 +166,13 @@ body {
   height: 30px;
   font-size: 18pt;
   line-height: 24pt;
-  background-color: #5da4d9;
+  background-color: #616161;
   margin-top: 20px;
   padding: 0 6px;
 }
 
 .sidebar .heading nav .side-nav h3 {
-  color: #5da4d9;
+  color: #616161;
   padding: 0 15px;
 }
 
@@ -222,7 +222,7 @@ body {
 }
 
 .sidebar .info {
-  border-bottom: 1px solid #4783c2;
+  border-bottom: 1px solid #373737;
   padding-left: 0;
 }
 
@@ -247,7 +247,7 @@ body {
 }
 
 .sidebar .skill-line .progress {
-  background-color: #4783c2;
+  background-color: #373737;
   height: 2px;
   overflow: visible;
 }
@@ -333,7 +333,7 @@ body {
 }
 
 .custom-content-wrapper span {
-  color: #5da4d9;
+  color: #373737;
   margin-top: 0;
   font-size: 10pt;
   line-height: 15pt;
@@ -359,9 +359,8 @@ body {
 
 .git a {
   font-size: 20px;
-  color: #767270;
+  color: #616161;
   cursor: pointer;
-  border-bottom: 1px solid #fff;
   -webkit-transition: 0.3s ease;
   -o-transition: 0.3s ease;
   transition: 0.3s ease;
@@ -375,7 +374,8 @@ body {
 }
 
 .git a:hover {
-  color: #5da4d9;
+  color: #373737;
+  
 }
 
 .interests ul {
@@ -395,7 +395,7 @@ body {
 }
 
 .interests ul li .fa {
-  color: #5da4d9;
+  color: #616161;
   text-align: left;
 }
 
@@ -407,8 +407,8 @@ body {
   -webkit-justify-content: space-around;
   -ms-flex-pack: distribute;
   justify-content: space-around;
-  color: #5da4d9;
-  margin-left: -9.2%;
+  color: #616161;
+  margin-left: -7.1%;
 }
 
 .social-media ul li .fa:hover {
@@ -421,6 +421,14 @@ body {
 
 .social-media .fa-linkedin:hover {
   color: #007bb5;
+}
+
+.social-media .fa-whatsapp:hover {
+  color: #34af23;
+}
+
+.social-media .fa-telegram:hover {
+  color: #0088cc;
 }
 
 .social-media .fa-tumblr:hover {
@@ -555,40 +563,32 @@ body {
   -webkit-text-fill-color: transparent;
   width: 35px;
 }
-
 .social-media .fa-github:hover {
   color: #333;
 }
-
 .social-media .fa-vk:hover {
   color: #45668e;
 }
-
 .section .g-map {
   padding-bottom: 0 !important;
   width: 100%;
 }
-
 .section .g-map #map {
   width: 100%;
   height: 350px;
 }
-
 .map-container {
   width: 100%;
 }
-
 .map-container iframe {
   width: 100%;
   display: block;
   pointer-events: none;
   position: relative;
 }
-
 .map-container iframe.clicked {
   pointer-events: auto;
 }
-
 input[type="date"]:focus:not([readonly]),
 input[type="datetime-local"]:focus:not([readonly]),
 input[type="email"]:focus:not([readonly]),
@@ -600,9 +600,8 @@ input[type="text"]:focus:not([readonly]),
 input[type="time"]:focus:not([readonly]),
 input[type="url"]:focus:not([readonly]),
 textarea.materialize-textarea:focus:not([readonly]) {
-  border-bottom: 1px solid #5da4d9;
+  border-bottom: 1px solid #616161;
 }
-
 input[type="date"]:focus:not([readonly]) + label,
 input[type="datetime-local"]:focus:not([readonly]) + label,
 input[type="email"]:focus:not([readonly]) + label,
@@ -614,57 +613,48 @@ input[type="text"]:focus:not([readonly]) + label,
 input[type="time"]:focus:not([readonly]) + label,
 input[type="url"]:focus:not([readonly]) + label,
 textarea.materialize-textarea:focus:not([readonly]) + label {
-  color: #5da4d9;
+  color: #616161;
 }
-
 .waves-me:focus {
   color: #fff;
 }
-
 .btn,
 .btn:focus,
 .btn:hover,
 .waves-me:focus {
-  background-color: #5da4d9;
+  background-color: #616161;
 }
-
 .btn {
   margin-left: 10px;
 }
-
 .email-failed,
 .email-success {
   display: none;
   text-align: left !important;
   margin: 0 !important;
 }
-
 .btn.disabled,
 .btn.disabled:focus,
 .btn.disabled:hover {
-  background-color: #5da4d9;
+  background-color: #616161;
   color: #fff;
   cursor: pointer;
 }
-
 #msgSubmit {
   font-size: 20px;
   margin-bottom: 20px;
   margin-left: 10px;
 }
-
 .text-danger {
   color: red;
 }
-
 .text-success {
-  color: #5da4d9;
+  color: #616161;
 }
-
 .portfolio-nav ul {
   text-align: center;
+  color: #616161;
 }
-
 .portfolio-nav ul li {
   list-style-type: none;
   display: inline;
@@ -672,43 +662,35 @@ textarea.materialize-textarea:focus:not([readonly]) + label {
   padding-bottom: 5px;
   cursor: pointer;
   text-transform: uppercase;
-  font-weight: bold
+  font-weight: 500;
 }
-
 .portfolio-nav ul li:hover {
-  border-bottom: 1px solid #bdbdbd;
+  border-bottom: 1px solid #616161;
 }
-
 .mix {
   display: none;
 }
-
 .fancybox-overlay {
   background-color: rgba(25, 22, 22, 0.69);
 }
-
 .screenshots .row {
   margin-bottom: 0;
 }
-
 .screenshots ul {
   margin: 0;
   padding: 0;
   width: 100%;
 }
-
 .screenshots ul li {
   float: left;
   list-style: none;
 }
-
 .screenshots figure {
   position: relative;
   overflow: hidden;
   margin: 6px 0;
   height: 310px;
 }
-
 .screenshots figure img {
   width: 100%;
   height: auto;
@@ -720,14 +702,12 @@ textarea.materialize-textarea:focus:not([readonly]) + label {
     0 2px 10px 0 rgba(0, 0, 0, 0.12);
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
 }
-
 .screenshots figure:hover img,
 .screenshots figure:focus img {
   -webkit-transform: scale(1.1);
   -ms-transform: scale(1.1);
   transform: scale(1.1);
 }
-
 .screenshots figcaption {
   position: absolute;
   top: 0;
@@ -744,130 +724,102 @@ textarea.materialize-textarea:focus:not([readonly]) + label {
   -o-transition: all 300ms ease-in-out;
   transition: all 300ms ease-in-out;
 }
-
 .screenshots figcaption a {
   color: #fff;
 }
-
 .screenshots figcaption a:hover,
 .screenshots figcaption a:focus {
   color: #73d0da;
 }
-
 .screenshots figure:hover figcaption,
 .screenshots figure:focus figcaption {
   opacity: 1;
 }
-
 .visible {
   opacity: 1;
 }
-
 .screenshots figure.cs-hover figcaption {
   opacity: 1;
 }
-
 .screenshots figcaption i {
   font-size: 24px;
   line-height: 37px;
   margin: 10px;
 }
-
 .screenshots figcaption p {
   margin-bottom: 0;
   font-weight: 400;
 }
-
 .screenshots figure:hover figcaption .caption-content,
 .screenshots figure:focus figcaption .caption-content {
   -webkit-transform: translate(0px, 0px);
   -ms-transform: translate(0px, 0px);
   transform: translate(0px, 0px);
 }
-
 .single-project {
   background-color: #fff;
   margin-bottom: 20px;
 }
-
 .single-project .full-project-title {
   font-size: 30px;
 }
-
 .single-project-img {
   margin: 0;
   padding: 0 !important;
 }
-
 .single_image {
   color: white;
   text-align: center;
 }
-
 .single_image h2 {
   font-size: 22px;
   line-height: 34px;
   margin: 10px 0;
 }
-
 .single_image p {
   text-transform: normal;
   margin-top: 10px;
   opacity: 0.8;
 }
-
 .full-portfolio {
   position: relative;
 }
-
 .paddingBottom {
   padding-bottom: 0 !important;
 }
-
 .link {
-  color: #5da4d9;
+  color: #373737;
   text-decoration: underline;
 }
-
 /* Cards for portfolio page */
-
 .card {
-  background-color: #5da4d9;
+  background-color: #616161;
   margin: 0px;
   margin-bottom: 20px;
 }
-
 .card .card-title {
   font-weight: 500;
 }
-
 .card .card-action {
   border-top: 1px solid rgba(253, 255, 255, 0.51);
 }
-
 .card .card-action a {
   color: #fff;
 }
-
 .card .card-action a:hover {
-  color: #767270;
+  color: #373737;
 }
-
 .waves-effect {
   /* margin-top: 10px; */
 }
-
 .waves-effect .fa {
   font-size: 1.3rem;
 }
-
 /* appalo */
-
 figure.effect-apollo {
   background: #3498db;
   color: #fff;
 }
-
 figure.effect-apollo img {
   opacity: 0.95;
   -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
@@ -875,7 +827,6 @@ figure.effect-apollo img {
   -webkit-transform: scale3d(1.05, 1.05, 1);
   transform: scale3d(1.05, 1.05, 1);
 }
-
 figure.effect-apollo figcaption::before {
   position: absolute;
   top: 0;
@@ -891,7 +842,6 @@ figure.effect-apollo figcaption::before {
   transform: scale3d(1.9, 1.4, 1) rotate3d(0, 0, 1, 45deg)
     translate3d(0, -100%, 0);
 }
-
 figure.effect-apollo p {
   position: absolute;
   right: 0;
@@ -905,24 +855,20 @@ figure.effect-apollo p {
   -webkit-transition: opacity 0.35s;
   transition: opacity 0.35s;
 }
-
 figure.effect-apollo h2 {
   /* text-align: left; */
 }
-
 figure.effect-apollo:hover img {
   opacity: 0.6;
   -webkit-transform: scale3d(1, 1, 1);
   transform: scale3d(1, 1, 1);
 }
-
 figure.effect-apollo:hover figcaption::before {
   -webkit-transform: scale3d(1.9, 1.4, 1) rotate3d(0, 0, 1, 45deg)
     translate3d(0, 100%, 0);
   transform: scale3d(1.9, 1.4, 1) rotate3d(0, 0, 1, 45deg)
     translate3d(0, 100%, 0);
 }
-
 figure.effect-apollo:hover p {
   opacity: 1;
   -webkit-transition-delay: 0.1s;
