@@ -245,7 +245,7 @@ body {
 }
 
 .sidebar .address-details h4 span {
-  font-size: 10pt;
+  font-size: 13pt;
 }
 
 .sidebar .skill-line {
@@ -879,4 +879,49 @@ figure.effect-apollo:hover p {
   opacity: 1;
   -webkit-transition-delay: 0.1s;
   transition-delay: 0.1s;
+}
+/* thank you page */
+
+.item {
+  display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+}
+
+.item .thxButton {
+  position: relative;
+  appearance: none;
+  background: #f72359;
+  padding: 1em 2em;
+  border: none;
+  color: white;
+  font-size: 1.2em;
+  cursor: pointer;
+  outline: none;
+  overflow: hidden;
+  border-radius: 100px;
+}
+
+.item .thxButton span {
+  position: relative;
+  pointer-events: none;
+  text-decoration: none;
+}
+
+.item .thxButton::before {
+  --size: 0;
+  content: '';
+  position: absolute;
+  left: var(--x);
+  top: var(--y);
+  width: var(--size);
+  height: var(--size);
+  background: radial-gradient(circle closest-side, #4405f7, rgba(0, 0, 0, 0));
+  transform: translate(-50%, -50%);
+  transition: width .2s ease, height .2s ease;
+}
+
+.item .thxButton:hover::before {
+  --size: 400px;
 }
