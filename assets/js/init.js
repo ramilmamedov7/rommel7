@@ -246,5 +246,5 @@ thxBtn.onmousemove = e => {
 };
 
 thxBtn.addEventListener("click", function(){
-  window.history.go(-1); return false;
+  window.history.go(-2); return false;
 })
