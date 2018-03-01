@@ -234,4 +234,21 @@ $(document).ready(function() {
         .removeClass("fadeInDown");
     }, 1500);
   });
+<<<<<<< HEAD
 });
+=======
+});
+// Thank you button!
+
+var thxBtn = document.querySelector(".thxButton");
+thxBtn.onmousemove = e => {
+  const x = e.pageX - e.target.offsetLeft;
+  const y = e.pageY - e.target.offsetTop;
+  e.target.style.setProperty("--x", `${x}px`);
+  e.target.style.setProperty("--y", `${y}px`);
+};
+
+thxBtn.addEventListener("click", function(){
+  window.history.go(-2); return false;
+})
+>>>>>>> 0ec208bc5ccf1dce0248310f22b2587832734239
