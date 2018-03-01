@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$(document).ready(function () {
   "use strict";
 
   $(".button-collapse").sideNav();
@@ -15,18 +15,18 @@ $(document).ready(function() {
   }
   refreshVar();
   $(window).resize(refreshVar);
-  $(window).scroll(function() {
+  $(window).scroll(function () {
     windowPos = $(window).scrollTop() + 300;
     //console.log(windowPos)
     if (windowPos > determinatePos - 500 && !cheked) {
-      $(".determinate").each(function(index, value) {
+      $(".determinate").each(function (index, value) {
         var progressBar = $(this),
           width = 0,
           verilenWidth = $(value).text();
         progressBar.empty();
         progressBar.width(width);
 
-        var interval = setInterval(function() {
+        var interval = setInterval(function () {
           width += 3.5;
           progressBar.css("width", width + "%");
           progressBar.append('<i class="fa fa-circle"></i>');
@@ -40,7 +40,7 @@ $(document).ready(function() {
     }
   });
 
-  $(".cv-style-switch").click(function() {
+  $(".cv-style-switch").click(function () {
     if ($(this).hasClass("open")) {
       $(this).removeClass("open");
       $("#switch-style").animate({
@@ -54,7 +54,7 @@ $(document).ready(function() {
     }
   });
 
-  jQuery(window).on("load", function() {
+  jQuery(window).on("load", function () {
     var $ = jQuery;
     $(".blog").masonry({
       itemSelector: ".blog-post",
@@ -82,7 +82,7 @@ $(document).ready(function() {
 
   $("#contactForm")
     .validator()
-    .on("submit", function(event) {
+    .on("submit", function (event) {
       if (event.isDefaultPrevented()) {
         // handle the invalid form...
         formError();
@@ -104,7 +104,7 @@ $(document).ready(function() {
       type: "POST",
       url: "process.php",
       data: "name=" + name + "&email=" + email + "&message=" + message,
-      success: function(text) {
+      success: function (text) {
         if (text == "success") {
           formSuccess();
         } else {
@@ -126,7 +126,7 @@ $(document).ready(function() {
       .addClass("shake animated")
       .one(
         "webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend",
-        function() {
+        function () {
           $(this).removeClass();
         }
       );
@@ -148,7 +148,7 @@ $(document).ready(function() {
 
   //    $('#portfolio-item').mixItUp();
 
-  $(".sa-view-project-detail").on("click", function(event) {
+  $(".sa-view-project-detail").on("click", function (event) {
     event.preventDefault();
     var href = $(this).attr("href") + " " + $(this).attr("data-action"),
       dataShow = $("#project-gallery-view"),
@@ -158,31 +158,25 @@ $(document).ready(function() {
       backBtn = $("#back-button"),
       filterBtn = $("#filter-button");
 
-    dataHide.animate(
-      {
-        marginLeft: "-120%"
-      },
-      {
-        duration: 400,
-        queue: false
-      }
-    );
-    filterBtn.animate(
-      {
-        marginLeft: "-120%"
-      },
-      {
-        duration: 400,
-        queue: false
-      }
-    );
+    dataHide.animate({
+      marginLeft: "-120%"
+    }, {
+      duration: 400,
+      queue: false
+    });
+    filterBtn.animate({
+      marginLeft: "-120%"
+    }, {
+      duration: 400,
+      queue: false
+    });
     dataHide.fadeOut(400);
     filterBtn.fadeOut(400);
-    setTimeout(function() {
+    setTimeout(function () {
       preLoader.show();
     }, 400);
-    setTimeout(function() {
-      dataShow.load(href, function() {
+    setTimeout(function () {
+      dataShow.load(href, function () {
         dataShowMeta.remove();
         preLoader.hide();
         dataShow.fadeIn(600);
@@ -191,41 +185,35 @@ $(document).ready(function() {
     }, 800);
   });
 
-  $("#back-button").on("click", function(event) {
+  $("#back-button").on("click", function (event) {
     event.preventDefault();
     var dataShow = $("#portfolio-item"),
       dataHide = $("#project-gallery-view"),
       filterBtn = $("#filter-button");
 
-    $("[data-animate]").each(function() {
+    $("[data-animate]").each(function () {
       $(this).addClass($(this).attr("data-animate"));
     });
 
     dataHide.fadeOut(400);
     $(this).fadeOut(400);
-    setTimeout(function() {
-      dataShow.animate(
-        {
-          marginLeft: "0"
-        },
-        {
-          duration: 400,
-          queue: false
-        }
-      );
-      filterBtn.animate(
-        {
-          marginLeft: "0"
-        },
-        {
-          duration: 400,
-          queue: false
-        }
-      );
+    setTimeout(function () {
+      dataShow.animate({
+        marginLeft: "0"
+      }, {
+        duration: 400,
+        queue: false
+      });
+      filterBtn.animate({
+        marginLeft: "0"
+      }, {
+        duration: 400,
+        queue: false
+      });
       dataShow.fadeIn(400);
       filterBtn.fadeIn(400);
     }, 400);
-    setTimeout(function() {
+    setTimeout(function () {
       dataShow
         .find(".fadeInRight, .fadeInLeft, .fadeInUp, .fadeInDown")
         .removeClass("fadeInRight")
@@ -234,21 +222,4 @@ $(document).ready(function() {
         .removeClass("fadeInDown");
     }, 1500);
   });
-<<<<<<< HEAD
 });
-=======
-});
-// Thank you button!
-
-var thxBtn = document.querySelector(".thxButton");
-thxBtn.onmousemove = e => {
-  const x = e.pageX - e.target.offsetLeft;
-  const y = e.pageY - e.target.offsetTop;
-  e.target.style.setProperty("--x", `${x}px`);
-  e.target.style.setProperty("--y", `${y}px`);
-};
-
-thxBtn.addEventListener("click", function(){
-  window.history.go(-2); return false;
-})
->>>>>>> 0ec208bc5ccf1dce0248310f22b2587832734239
