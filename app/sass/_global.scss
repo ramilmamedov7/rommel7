@@ -1,0 +1,308 @@
+@import "vars";
+@import "mixins";
+//
+// Normalization and Global styling
+// Normalization of HTML elements, to remove styles targeting irrelevant browsers.
+// Credits: Normalize.css.
+//
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    box-sizing: border-box;
+    -ms-overflow-style: scrollbar;
+    -webkit-tap-highlight-color: $transparent;
+}
+
+//
+// Body
+//
+body {
+    margin: 0;
+    font-family: $font-r;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: $font-color;
+    color: #767270;
+    text-align: left;
+    background-color: $bg-color;
+}
+
+// Shim for "new" HTML5 structural elements to display correctly (IE10, older browsers)
+article,
+aside,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section {
+    display: block;
+}
+
+//
+// Typography
+//
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a {
+    @include reset-text;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+}
+
+h1 {
+    font-size: 32px;
+    font-weight: 600
+}
+
+h2 {
+    font-size: 28px;
+    font-weight: 500
+}
+
+h3 {
+    font-size: 18px;
+    font-weight: 500
+}
+
+h4 {
+    font-size: 16px;
+}
+
+h5 {
+    font-size: 14px;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+span {
+    font-family: $font-t;
+}
+
+//
+// Lists
+//
+ol,
+ul,
+dl {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+// Bold
+b,
+strong {
+    font-weight: bolder; // Add the correct font weight in Chrome, Edge, and Safari
+}
+
+//
+// Links
+//
+a {
+    color: $black;
+    text-decoration: none;
+    background-color: transparent; // Remove the gray background on active links in IE 10.
+    -webkit-text-decoration-skip: objects; // Remove gaps in links underline in iOS 8+ and Safari 8+.
+    &:hover {
+        color: $gray;
+        text-decoration: underline; // Default
+    }
+}
+
+//
+// Forms
+//
+input,
+textarea {
+    outline: none;
+}
+
+//
+// Remove the default `border-radius` that macOS Chrome adds.
+button {
+    border-radius: 0;
+    &:focus,
+    .navbar-toggler-icon {
+        outline: 1px dotted; // Work around a Firefox/IE bug where the transparent `button` background
+        outline: 5px auto; // results in a loss of the default `button` focus styles.
+    }
+}
+
+//
+// Placeholder with autoprefixs...
+@include placeholder {
+    color: $black;
+}
+
+//
+// Selection with autoprefixs...
+@include selection {
+    color: $white;
+    background-color: $gray
+}
+
+//
+// UnCSS Ignore
+.UnCSS {
+    @include sr-only();
+}
+
+.portfolio-nav ul li:hover,
+input[type="time"]:focus:not([readonly]),
+input[type="url"]:focus:not([readonly]),
+input[type="date"]:focus:not([readonly]),
+input[type="datetime-local"]:focus:not([readonly]),
+input[type="email"]:focus:not([readonly]),
+input[type="number"]:focus:not([readonly]),
+input[type="password"]:focus:not([readonly]),
+input[type="search"]:focus:not([readonly]),
+input[type="tel"]:focus:not([readonly]),
+input[type="text"]:focus:not([readonly]),
+textarea.materialize-textarea:focus:not([readonly]) {
+    border-bottom: 1pt solid $gray
+}
+
+input[type="time"]:focus:not([readonly])+label,
+input[type="url"]:focus:not([readonly])+label,
+input[type="date"]:focus:not([readonly])+label,
+input[type="datetime-local"]:focus:not([readonly])+label,
+input[type="email"]:focus:not([readonly])+label,
+input[type="number"]:focus:not([readonly])+label,
+input[type="password"]:focus:not([readonly])+label,
+input[type="search"]:focus:not([readonly])+label,
+input[type="tel"]:focus:not([readonly])+label,
+input[type="text"]:focus:not([readonly])+label,
+textarea.materialize-textarea:focus:not([readonly])+label {
+    color: $gray
+}
+
+.a1,
+.a2,
+.a3,
+.a4,
+.a5 {
+    visibility: visible
+}
+
+.a1 {
+    animation-delay: .1s
+}
+
+.a2 {
+    animation-delay: .2s
+}
+
+.a3 {
+    animation-delay: .3s
+}
+
+.a4 {
+    animation-delay: .4s
+}
+
+.a5 {
+    animation-delay: .5s;
+    animation-name: fadeIn;
+}
+
+main.container {
+    margin-top: 25px
+}
+
+main.section {
+    padding-left: 35px !important;
+}
+
+.margin-unset {
+    margin: unset !important;
+}
+
+.padding-unset {
+    padding: unset !important;
+}
+
+.p-m-unset {
+    margin: unset !important;
+    padding: unset !important;
+}
+
+.git {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    a {
+        font-size: 20px;
+        color: $gray;
+        cursor: pointer;
+        transition: 0.3s ease;
+        text-decoration: none;
+        &:hover {
+            color: $gray-2;
+        }
+        i {
+            font-size: 22px;
+        }
+    }
+}
+
+.material-tooltip {
+    background-color: $gray;
+    border-radius: 5px;
+    padding: 10px 15px;
+}
+
+.mix {
+    display: none;
+}
+
+.btn-back {
+    display: inline-block;
+    margin-left: 10px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 2px;
+    background-color: $gray;
+    color: $white;
+    opacity: 1;
+    transition: 0.3s ease;
+    &:hover {
+        text-decoration: none;
+        color: $black;
+        opacity: 0.9;
+    }
+    .fa {
+        font-size: 16px;
+        line-height: 24px;
+        margin-right: 10px;
+    }
+}

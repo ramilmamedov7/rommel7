@@ -1,0 +1,7 @@
+/**/package-lock.json
+/**/yarn.lock
+/**/Thumbs.db
+/**/*.DS_Store
+/node_modules/
+/.git/
+/rommel7.github.io/
