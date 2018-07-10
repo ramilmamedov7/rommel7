@@ -1,0 +1,9 @@
+CACHE MANIFEST
+
+CACHE:
+/docs/css/main.min.css
+/docs/js/scripts.min.js
+/docs/img/avatar.jpg
+
+NETWORK:
+*
