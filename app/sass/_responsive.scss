@@ -1,0 +1,112 @@
+@import "vars";
+@import "mixins";
+/* Large Devices, Wide Screens */
+
+@media only screen and (max-width: 1200px) {}
+
+/* Medium Devices, Desktops */
+
+@media only screen and (max-width: 992px) {
+    .sidebar {
+        .sidebar-top {
+            .avatar {
+                background-color: $white;
+                img {
+                    display: block;
+                    margin: 0 auto;
+                }
+                .avatar-desc {
+                    bottom: 0px;
+                }
+            }
+        }
+    }
+    .section {
+        .section-wrapper {
+            .custom-content {
+                &--title {
+                    text-align: center;
+                    margin-bottom: 40px;
+                }
+                .custom-content-wrapper {
+                    padding-right: unset;
+                    .wrapper-caption {
+                        text-align: center;
+                    }
+                    .date {
+                        text-align: center;
+                    }
+                    .description {
+                        text-align: center;
+                        padding: 0 30px 25px;
+                    }
+                }
+            }
+            .interests .interests-list {
+                padding: 0 40px;
+                li {
+                    margin: 10px;
+                }
+            }
+        }
+    }
+    .social-media {
+        &--block {
+            .social-media-list {
+                padding: 0 30px;
+                li {
+                    margin: 10px;
+                }
+            }
+        }
+    }
+    .portfolio-nav {
+        .filter-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+    }
+    main.section {
+        padding: unset !important;
+    }
+    .row .work .col,
+    .row .education .col,
+    .row .itertests .col,
+    .row .github .col,
+    .row .form .col,
+    .row .google-map .col,
+    .row .social-media .col,
+        {
+        padding: unset !important;
+    }
+    .contact-form {
+        form {
+            padding: 0 30px;
+        }
+    }
+}
+
+/* Small Devices, Tablets */
+
+@media only screen and (max-width: 768px) {}
+
+/* Extra Small Devices, Phones */
+
+@media only screen and (max-width: 480px) {
+    .contact-form {
+        form {
+            .btn {
+                display: block;
+                margin: 0 auto;
+            }
+            .signature {
+                display: none;
+            }
+        }
+    }
+}
+
+/* Custom, iPhone Retina */
+
+@media only screen and (max-width: 320px) {}
