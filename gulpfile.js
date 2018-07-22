@@ -21,7 +21,7 @@ let paths = {
   sass: 'app/sass/**/*.scss',
   script: 'app/js/core.js',
   imgsrc: 'app/img/**/*',
-  imgdest: 'dist/img',
+  imgdest: './img',
 };
 
 
@@ -30,7 +30,7 @@ let paths = {
 gulp.task('browser-sync', () => {
   browsersync({
     server: {
-      baseDir: 'dist'
+      baseDir: './'
     },
     notify: false
     // open: false,
@@ -41,18 +41,18 @@ gulp.task('browser-sync', () => {
 
 
 //  Task for HTML files
-//  Minifying HTML files and putting them into dist directory...
+//  Minifying HTML files and putting them into ./ directory...
 gulp.task('html', () => {
   gulp
     .src('app/**.html')
     .pipe(htmlmin({ collapseWhitespace: true })) // (Optional)
-    .pipe(gulp.dest('dist'))
+    .pipe(gulp.dest('./'))
     .pipe(browsersync.reload({ stream: true }));
 });
 
 
 //  Task for Images
-//  Minifying Images files and putting them into dist directory and clearing gulp paths cashing...
+//  Minifying Images files and putting them into ./ directory and clearing gulp paths cashing...
 gulp.task('img', () => {
   gulp
     .src(paths.imgsrc)
@@ -72,7 +72,7 @@ gulp.task('img', () => {
 gulp.task('fonts', () => {
   gulp
     .src('app/fonts/**/*')
-    .pipe(gulp.dest('dist/fonts'));
+    .pipe(gulp.dest('./fonts'));
 });
 
 
@@ -88,12 +88,12 @@ gulp.task('styles', () => {
         notify.onError();
       })
       .pipe(uncss({html: ['app/**.html', 'http://localhost:3000']})) // (Opt.)
-      .pipe(purify(['dist/**/*.js', 'dist/**/*.html']))
+      .pipe(purify(['./**/*.js', './**/*.html']))
       .pipe(cssnano())
       .pipe(autoprefixer(['last 5 versions']))
       .pipe(cleancss({ level: { 1: { specialComments: 0 } } })) // (Opt.)
       .pipe(rename({ suffix: '.min', prefix: '' }))
-      .pipe(gulp.dest('dist/css'))
+      .pipe(gulp.dest('./css'))
       .pipe(browsersync.reload({ stream: true }))
   );
 });
@@ -104,7 +104,7 @@ gulp.task('scripts', () => {
   gulp
     .src(paths.script)
     .pipe(babel({ presets: ['env'] }))
-    .pipe(gulp.dest('dist/js/'));
+    .pipe(gulp.dest('./js/'));
     Scripts();
 });
 
@@ -117,14 +117,14 @@ Scripts = () => {
       'app/libs/masonry.pkgd.js',
       'app/libs/validator.min.js',
       'app/libs/jquery.mixitup.min.js',
-      'dist/js/core.js' // Always at the end
+      './js/core.js' // Always at the end
     ])
     .pipe(concat('scripts.min.js'))
     .pipe(uglify()) // (Optional)
     .on('error', message => {
       gutil.log(gutil.colors.red('[Error]'), message.toString());
     })
-    .pipe(gulp.dest('dist/js'))
+    .pipe(gulp.dest('./js'))
     .pipe(browsersync.reload({ stream: true }));
 };
 
